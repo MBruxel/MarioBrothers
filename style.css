@@ -56,9 +56,10 @@ body {
 }
 
 video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .mascara {
@@ -103,8 +104,8 @@ video {
     visibility: hidden;
     position: fixed;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     transition: visibility 1s ease-in-out;
 }
@@ -115,7 +116,7 @@ video {
     gap: 20px;
     flex-direction: column;
     position: fixed;
-    left: -325px;
+    left: -100%;
     top: 30%;
     padding: 20px;
     border-radius: 5px;
@@ -128,7 +129,7 @@ input {
     border-radius: 5px;
     border: 1px solid gray;
     padding-left: 5px;
-    outline-color: #18D80F;
+    outline-color: #0f48d8;
     font-size: 12px;
     padding: 2px;
 
@@ -140,7 +141,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid gray;
     padding-left: 5px;
-    outline-color: #18D80F;
+    outline-color: #0f48d8;
     padding: 2px;
     resize: none;
 }
@@ -174,12 +175,22 @@ body {
 
 @media(max-width: 900px) {
 
+    .formulario-fale-conosco {
+        width: 80.5vw;
+    }
+
+    .logo-mario {
+        height: auto;
+        width: 50vh;
+    }
+
     p {
         display: none;
     }
 
     .caixa-mae {
         flex-direction: column;
+        justify-content: flex-start;
         padding: 10px;
     }
 

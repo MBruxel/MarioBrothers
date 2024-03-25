@@ -10,6 +10,6 @@ function cliqueiNoBotao() {
 
 function fecharX() {
     mascara.style.visibility = "hidden"
-    form.style.left = "-325px"
+    form.style.left = "-100%"
     form.style.transform = "translateX(0%)"
 }
